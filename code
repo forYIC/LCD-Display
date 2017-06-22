@@ -1,0 +1,22 @@
+#include <LiquidCrystal.h>
+
+LiquidCrystal l(8,9,10,11,12,13);
+
+void setup(){
+ l.begin(16,2);//16*2
+}
+
+void loop(){
+ l.home();//start 0
+ l.print("SMKDSN IS");
+ delay(1500);
+ l.setCursor(0,1);//scond row
+ l.print("AWESOME!!");
+ delay(1500);
+ l.clear();
+ delay(500);
+}
+
+
+
+
